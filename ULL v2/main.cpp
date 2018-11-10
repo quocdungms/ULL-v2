@@ -31,10 +31,10 @@ int main()
 				ifs >> val;
 				printf("The list contains %d: %d\n", val, list->contains(val));
 				break;
-			//case 'd': // delete an element at pos position in the list
-			//	ifs >> pos;
-			//	list->deleteAt(pos);
-			//	break;
+			case 'd': // delete an element at pos position in the list
+				ifs >> pos;
+				list->deleteAt(pos);
+				break;
 			case 'f': // return the index of the first occurence of a specific element in the list
 				ifs >> val;
 				printf("First occurrence of %d is at %d\n", val, list->firstIndexOf(val));
@@ -43,10 +43,10 @@ int main()
 				ifs >> pos;
 				printf("The element at position %d is %d\n", pos, list->getAt(pos));
 				break;
-			//case 'i': // insert a new element to pos position in the list
-			//	ifs >> pos >> val;
-			//	list->insertAt(pos, val);
-			//	break;
+			case 'i': // insert a new element to pos position in the list
+				ifs >> pos >> val;
+				list->insertAt(pos, val);
+				break;
 			case 'l': // return the index of the last occurence of a specific element in the list
 				ifs >> val;
 				printf("Last occurrence of %d is at %d\n", val, list->lastIndexOf(val));
