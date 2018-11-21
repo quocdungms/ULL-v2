@@ -7,6 +7,7 @@ void UnrolledLinkedList::add(int val)
 	{
 		Node *tempNode = new Node(nodeSize);
 		numOfNodes++;
+		
 		head = tail = tempNode;
 		head->add(val);
 
